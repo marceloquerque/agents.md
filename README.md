@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Agent protocol rules for Codex/Cursor (inspired by @steipete).
+Agent protocol rules for Codex/Cursor (inspired by [@steipete](https://github.com/steipete)).
 
 ## What is AGENTS.md?
 
