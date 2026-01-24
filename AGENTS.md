@@ -9,6 +9,15 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Editor: `cursor <path>`.
 - New deps: quick health check (recent releases/commits, adoption).
 - Style: telegraph. Drop filler/grammar. Min tokens.
+- When asked to update the `AGENTS.md` to the latest version:
+  1. Fetch `https://raw.githubusercontent.com/robinebers/agents.md/main/AGENTS.md`
+  2. Merge into existing `AGENTS.md` without losing local changes
+
+## Use Available Skills
+- You have access to agent skills, which are very useful.
+- Before creating a plan or spec, verify if there are skills available for it.
+- Examples include: React Best Practices, Convex Best Practices, and similar.
+- Prefer skills (often first-party) over Exa/Ref when available.
 
 ## Guardrails
 - Use `trash` for deletes.
@@ -57,6 +66,28 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Conflicts: stop. call out; pick safer path.
 - Unrecognized changes: assume other agent; keep going; focus your changes. If it causes issues, stop + ask user.
 - Leave breadcrumb notes in thread.
+
+## Completion and Autonomy Gate
+- Assume "continue" unless the user explicitly says "stop" or "pause".
+- Do not ask "should I continue?" or similar questions.
+- If more progress is possible without user input, continue.
+- BEFORE you end a turn or ask the user a question, run this checklist
+-- Answer these privately, then act:
+   1) Was the initial task fully completed?
+   2) If a definition-of-done was provided, did you run and verify every item?
+   3) Are you about to stop to ask a question?
+      - If yes: is the question actually blocking forward progress?
+   4) Can the question be answered by choosing an opinionated default?
+      - If yes: choose a default, document it in , and continue.
+- When you choose opinionated defaults, document them in `/docs/choices.md` as you work through.
+- If you must ask the user:
+-- Ask exactly one blocking question.
+-- Explain why it is blocking and what you will do once answered.
+-- Provide your best default/assumption as an alternative if the user does not care.
+
+## Useful Tidbits
+- Use a single Vercel AI Gateway API key across the project, not individual providers.
+- Run `bunx convex dev --once` to verify, not `bunx convex codegen`
 
 ## User Notes
 Use below list to store and recall user notes when asked to do so.
