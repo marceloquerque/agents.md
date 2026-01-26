@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Version: 0.2 (2026-01-24)
+Version: 0.21 (2026-01-26)
 
 Start: say hi + 1 motivating line.
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
