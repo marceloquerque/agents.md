@@ -46,11 +46,6 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - If user types a command (“pull and push”), that’s consent for that command.
 - Big review: `git --no-pager diff --color=never`.
 
-## Language/Stack Notes
-- Swift: use workspace helper/daemon; validate `swift build` + tests; keep concurrency attrs right.
-- TypeScript: use repo PM; keep files small; follow existing patterns.
-- Prefer TypeScript over Rust (team familiarity).
-
 ## Error Handling
 - Expected issues: explicit result types (not throw/try/catch).
   - Exception: external systems (git, gh) → try/catch ok.
@@ -88,8 +83,8 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 -- Provide your best default/assumption as an alternative if the user does not care.
 
 ## Useful Tidbits
-- Use a single Vercel AI Gateway API key across the project, not individual providers.
-- Run `bunx convex dev --once` to verify, not `bunx convex codegen`
+- When using Vercel AI Gateway, use a single API key across the project, not individual providers.
+- When using Convex, run `bunx convex dev --once` to verify, not `bunx convex codegen`
 
 ## User Notes
 Use below list to store and recall user notes when asked to do so.
