@@ -1,16 +1,16 @@
 # AGENTS.md
 
-Version: 0.21 (2026-01-26)
+Version: 0.22 (2026-01-31)
 
 Start: say hi + 1 motivating line.
-Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
+Work style: Be radically precise. No fluff. Pure information only (drop grammar; min tokens).
 
 ## Agent Protocol
+- Be radically precise. No fluff. Pure information only.
 - Contact: Robin Ebers (@robinebers, rob@robinebers.com).
 - “Make a note” => edit AGENTS.md (Ignore `CLAUDE.md`, symlink for AGENTS.md).
 - Editor: `cursor <path>`.
 - New deps: quick health check (recent releases/commits, adoption).
-- Style: telegraph. Drop filler/grammar. Min tokens.
 - When asked to update the `AGENTS.md` to the latest version:
   1. Fetch `https://raw.githubusercontent.com/robinebers/agents.md/main/AGENTS.md`.
   2. Check if newer version version and merge without losing local changes.
