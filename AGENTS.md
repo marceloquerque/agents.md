@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Version: 0.22 (2026-01-31)
+Version: 0.23 (2026-01-31)
 
 Start: say hi + 1 motivating line.
 Work style: Be radically precise. No fluff. Pure information only (drop grammar; min tokens).
@@ -27,16 +27,15 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - Keep files <~400 LOC; split/refactor as needed.
 - Simplicity first: handle only important cases; no enterprise over-engineering.
 - New functionality: small OR absolutely necessary.
-- NEVER delete files or folders without explicit consent.
+- NEVER delete files, folders or other data unless explicilty approved or part of a plan.
 - MCPs: Use Exa to websearch early, and Ref to seek specific documention or web fetch.
-- Quote exact errors; prefer 2024-2026 sources; fallback web server if unavailable
+- Quote exact errors; prefer 2025-2026 sources.
 
 ## Git
 - Always use `gh` to communicate with GitHub.
 - GitHub CLI for PRs/CI/releases. Given issue/PR URL (or `/pull/5`): use `gh`, not web search.
 - Examples: `gh issue view <url> --comments -R owner/repo`, `gh pr view <url> --comments --files -R owner/repo`.
-- Commits: Conventional Commits (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
-- CI: `gh run list/view` (rerun/fix til green).
+- Conventional branches (`feat|fix|refactor|build|ci|chore|docs|style|perf|test`).
 - Safe by default: `git status/diff/log`. Push only when user asks.
 - `git checkout` ok for PR review / explicit request.
 - Branch changes require user consent.
@@ -54,15 +53,13 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 
 ## Backwards Compat
 - Local/uncommitted: none needed; rewrite as if fresh.
-- In main, unreleased: probably not; ask user.
-- Released: probably needed.
+- In main: probably needed, ask user.
 
 ## Critical Thinking
 - Fix root cause (not band-aid).
-- Unsure: read more code; if still stuck, ask w/ short options.
+- Unsure: read more code; if still stuck, ask w/ short options (A/B/C).
 - Conflicts: stop. call out; pick safer path.
 - Unrecognized changes: assume other agent; keep going; focus your changes. If it causes issues, stop + ask user.
-- Leave breadcrumb notes in thread.
 
 ## Completion and Autonomy Gate
 - Assume "continue" unless the user explicitly says "stop" or "pause".
@@ -76,15 +73,17 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
       - If yes: is the question actually blocking forward progress?
    4) Can the question be answered by choosing an opinionated default?
       - If yes: choose a default, document it in , and continue.
-- When you choose opinionated defaults, document them in `/docs/choices.md` as you work through.
+- When you choose opinionated defaults, document them in `/docs/choices.md` as you work.
+- Leave breadcrumb notes in thread and `/docs/breadcrumbs.md`.
+- When writing to `/docs/choices.md` or `/docs/breadcrumbs.md` categorize by date (tail)
 - If you must ask the user:
--- Ask exactly one blocking question.
+-- Ask exclusively blocking question only.
 -- Explain why it is blocking and what you will do once answered.
 -- Provide your best default/assumption as an alternative if the user does not care.
 
 ## Useful Tidbits
 - When using Vercel AI Gateway, use a single API key across the project, not individual providers.
-- When using Convex, run `bunx convex dev --once` to verify, not `bunx convex codegen`
+- When using Convex, run `bunx convex dev --once` to verify, not `bunx convex codegen`.
 
 ## User Notes
 Use below list to store and recall user notes when asked to do so.
