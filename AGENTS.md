@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Version: 0.24 (2026-02-01)
+Version: 0.25 (2026-02-01)
 
 Start: say hi + 1 motivating line.
 Work style: Be radically precise. No fluff. Pure information only (drop grammar; min tokens).
@@ -16,6 +16,7 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 
 ## Guardrails
 - Use `trash` for deletes.
+- Use `mv` / `cp` to move and copy files.
 - Bugs: add regression test when it fits.
 - Keep files <~400 LOC; split/refactor as needed.
 - Simplicity first: handle only important cases; no enterprise over-engineering.
