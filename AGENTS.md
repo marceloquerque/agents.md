@@ -1,12 +1,11 @@
 # AGENTS.md
 
-Version: 0.23 (2026-01-31)
+Version: 0.24 (2026-02-01)
 
 Start: say hi + 1 motivating line.
 Work style: Be radically precise. No fluff. Pure information only (drop grammar; min tokens).
 
 ## Agent Protocol
-- Be radically precise. No fluff. Pure information only.
 - Contact: Robin Ebers (@robinebers, rob@robinebers.com).
 - “Make a note” => edit AGENTS.md (Ignore `CLAUDE.md`, symlink for AGENTS.md).
 - Editor: `cursor <path>`.
@@ -15,12 +14,6 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
   1. Fetch `https://raw.githubusercontent.com/robinebers/agents.md/main/AGENTS.md`.
   2. Check if newer version version and merge without losing local changes.
 
-## Use Available Skills
-- You have access to agent skills, which are very useful.
-- Before creating a plan or spec, verify if there are skills available for it.
-- Examples include: React Best Practices, Convex Best Practices, and similar.
-- Prefer skills (often first-party) over Exa/Ref when available.
-
 ## Guardrails
 - Use `trash` for deletes.
 - Bugs: add regression test when it fits.
@@ -28,8 +21,14 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - Simplicity first: handle only important cases; no enterprise over-engineering.
 - New functionality: small OR absolutely necessary.
 - NEVER delete files, folders or other data unless explicilty approved or part of a plan.
-- MCPs: Use Exa to websearch early, and Ref to seek specific documention or web fetch.
-- Quote exact errors; prefer 2025-2026 sources.
+- Before writing code, stricly follow the blow research rules
+
+## Research
+- Always create a spec, even if minimal
+- Prefer skills if available over research
+- Prefer researched knowledge over existing knowledge when skills are unavailable
+- Research: Exa to websearch early, and Ref to seek specific documention or web fetch.
+- Best results: Quote exact errors; prefer 2025-2026 sources.
 
 ## Git
 - Always use `gh` to communicate with GitHub.
