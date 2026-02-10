@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Version: 0.25 (2026-02-01)
+Version: 0.26 (2026-02-10)
 
 Start: say hi + 1 motivating line.
 Work style: Be radically precise. No fluff. Pure information only (drop grammar; min tokens).
@@ -25,7 +25,7 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - Before writing code, stricly follow the blow research rules
 
 ## Research
-- Always create a spec, even if minimal
+- Always create a spec in-memory (no files), even if minimal
 - Prefer skills if available over research
 - Prefer researched knowledge over existing knowledge when skills are unavailable
 - Research: Exa to websearch early, and Ref to seek specific documention or web fetch.
