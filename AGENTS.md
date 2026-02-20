@@ -15,7 +15,7 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
   2. Check if it's a newer version and merge without losing local changes.
   3. Update the version number and date in the file.
  
-## User Rules
+## Critical Rule
 
 - **CRITICAL RULE:** I am a non-technical user. Never assume I know programming terms or concepts.
 - Always explain everything in simple language — like talking to a 5th grader.
