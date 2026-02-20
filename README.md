@@ -1,7 +1,5 @@
 # AGENTS.md
 
-> **Note:** Inspired by [@steipete's AGENTS.md](https://github.com/steipete/agent-rules), but this is my own heavily opinionated version. The original sparked the idea. Everything here reflects how *I* want agents to work. Optimized for autonomous agents, with accountability protocols. Fork it, remix it, make it yours.
-
 Agent protocol rules for Codex/Claude/Cursor.
 
 ## What is AGENTS.md?
