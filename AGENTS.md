@@ -35,6 +35,7 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - Simplicity first: handle only important cases; no enterprise over-engineering.
 - New functionality: small OR absolutely necessary.
 - Never delete files, folders, or other data unless explicitly approved or part of a plan.
+- When asked to fix/correct, assume the issue exists
 - Before writing code, strictly follow the below research rules.
 - Always start with "Executive Summary" and summarize the plan for a non-technical reader in a few short bullets (what will change, behavior outcomes, intent, etc), avoiding jargon and implementation details. After that, show the full technical plan with details needed to implement.
 
@@ -64,7 +65,6 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 
 ## Error Handling
 
-- When asked to fix/correct, assume the issue exists
 - Expected issues: explicit result types (not throw/try/catch).
   - Exception: external systems (git, gh) → try/catch ok.
   - Exception: React Query mutations → throw ok.
