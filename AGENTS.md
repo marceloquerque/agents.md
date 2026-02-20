@@ -13,6 +13,7 @@ Work style: Be radically precise. No fluff. Pure information only (drop grammar;
 - When asked to update the `AGENTS.md` to the latest version:
   1. Fetch `https://raw.githubusercontent.com/marceloquerque/agents.md/refs/heads/main/AGENTS.md?token=GHSAT0AAAAAADQYPO3H3DV5IAXOWWKKC3WU2MYMXNA`.
   2. Check if newer version version and merge without losing local changes.
+  3. Update the version number and date in the file.
  
 ## User Rules
 
